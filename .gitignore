@@ -216,3 +216,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# AI: exercise video datasets and derived/model artifacts (large binaries, not for git)
+archive (2)/
+archive (3)/
+ai/data/
+ai/outputs/
+ai/models/
+ai/review/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.pt
+*.pth
+*.onnx
+*.h5
+*.pkl
+*.joblib
