@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Work For It",
+    "version": "0.1.0",
+    "description": "Blocks YouTube shorts until you finish a set of a workout verified by your camera",
+    "permissions": ["storage"],
+    "content_scripts" : [
+        {
+            "matches": ["*://*.youtube.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_start"
+        }
+    ],
+    "web_accessible_resources" : [
+        {
+            "resources": ["lock.html", "lock.js"],
+            "matches": ["*://*.youtube.com/*"]
+        }
+    ]
+}

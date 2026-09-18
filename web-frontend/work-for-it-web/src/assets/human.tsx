@@ -100,7 +100,7 @@ export default function Human() {
       <style>{`
         .viewfinder {
           position: relative;
-          width: min(420px, 85vw);
+          width: min(370px, 85vw);
           aspect-ratio: 1;
           margin: 0 auto;
           display: flex;
