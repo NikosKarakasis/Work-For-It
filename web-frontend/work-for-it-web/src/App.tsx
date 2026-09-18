@@ -1,23 +1,29 @@
 import './App.css'
 import NavBar from './components/NavBar'
 import { Route, Routes } from 'react-router-dom'
-
-function SectionPage({ title }: { title: string }) {
-  return (
-    <main>
-      <h1>{title}</h1>
-    </main>
-  )
-}
+import HowItWorksSection from './sections/HowItWorksSection'
+import PrivacySection from './sections/Privacy'
+import ProductSection from './sections/ProductSection'
+import Human from './assets/human'
 
 function App() {
   return (
-    <div className='nav-header'>
+    <div>
+      <header className='site-header'>
+        <h1 className='site-title'>Work For It</h1>
+      </header>
+
       <NavBar />
+
+      <div className='human-stage'>
+        <h2 className='human-stage-title'>Point your camera. Perform.</h2>
+        <Human />
+      </div>
+      
       <Routes>
-        <Route path='/product-section' element={<SectionPage title='Product' />} />
-        <Route path='/how-it-works-section' element={<SectionPage title='How it Works' />} />
-        <Route path='/privacy-section' element={<SectionPage title='Privacy' />} />
+        <Route path='/' element={<ProductSection />} />
+        <Route path='/how-it-works-section' element={<HowItWorksSection />} />
+        <Route path='/privacy-section' element={<PrivacySection />} />
       </Routes>
     </div>  
   )
