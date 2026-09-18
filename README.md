@@ -1,4 +1,4 @@
-# RepLock
+# Work for it
 
 **Pay in reps, not in scroll time.**
 
